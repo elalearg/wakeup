@@ -9,16 +9,14 @@ const Box = memo(({Titulo, divcolor, Texto}) =>{
         return (
             <Card className="Card">
                 <CardContent>
-                    <h5 style={{marginTop:35,marginLeft:40, fontSize:16}}>{Titulo}</h5>
-                    <Divider  style={{ background:divcolor  ,marginLeft:40 }} sx={{borderBottomWidth:2, width:50}}></Divider>
+                    <h5 style={{marginTop:25,marginLeft:20, fontSize:16}}>{Titulo}</h5>
+                    <Divider  style={{ background:divcolor  ,marginLeft:20 }} sx={{borderBottomWidth:2, width:50}}></Divider>
                     <br></br>
-                    <div style={{
-                        width: 257,
-                        height: 60,
-                        marginLeft:40
-                    }}>                   
-                    <span className="text">{Texto}</span>
-                </div>
+                                      
+                    <BoxUi className="text" sx={{ width: 'auto', marginLeft:2}}> 
+                        {Texto}
+                    </BoxUi>
+                   
                 </CardContent>
             </Card>
         );

@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+h5, h1, h3, h4
+{
+    font-family:'Montserrat';
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
 .primary-text
 {
     color: #FF685B;  
@@ -71,47 +83,50 @@
 
 .Card
 {
-    width: 328px;
+    max-width: 328px;
     height: 196px;   
     margin: 0px 30px;
 }
 .Page
 {
-    left: 0px;
-    top: 0px;  
+    left: -1px;
+    top: -1px;  
+    padding: 0 0 0 0;
 }
 .Principal
 {
-   position: absolute;
-    width: 1440px;
-    height: 900px;
+    position: relative;
+    max-width: 1440px;
+    height: auto;
     left: 0px;
     top: 0px; 
+    display: block; 
+    padding-bottom: 2%;
 }
 .Content
 {
     background-color: #FAFAFA; 
-   position: absolute;
-    width: 1440px;
-    height: 800px;
-    left: 0px;
-    top: 900px; 
+    position:relative;
+    max-width: 1440px;
+    height: auto;
+    display: block; 
+    padding-bottom: 2%;
 }
 .Header
 {   
     position: relative;
-    width: 1322px;
-    height: 91px;
+    max-width: 1322px;
+    height: auto;
     margin-top: 33px;
-    margin-left: 59px;    
+    margin-left: 59px;   
+    display: block; 
 }
 
 .Footer
 {
-    position: absolute;
+    position: relative;
     height: 346px;
-    width: 1322px;
-    top: 1700px;
+    max-width: 1322px;
 }   
 .Title
 {
